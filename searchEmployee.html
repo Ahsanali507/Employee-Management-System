@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Employee</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+<body>
+<ul>
+  <li><a href="addEmployee.html">Add Employee</a></li>
+  <li><a href="#">Search Employee</a></li>
+  <li><a href="deleteEmployee.html">Delete Employee</a></li>
+  <li><a href="updateEmployee.html">Update Employee</a></li>
+  <li><form action="ViewAllEmployees" method="get"><input type="submit" value="View All Employees" style="background:none;padding:16px 8px;margin:0;"></form></li>
+  <li><form action="Logout" method="get"><input type="submit" value="Logout" style="background:none;padding:16px 8px;margin:0;"></form></li>
+</ul>
+<div class="container">
+<h2>Search Employee</h2>
+
+<div class="outer">
+  <form action="SearchEmployee" method="post">
+    <div class="inner" style="width: 100%;">
+    <label>Enter employee id to search</label>
+    <input type="number" id="empid" class="form-control" name="empid" placeholder="Enter employee id" required>
+    <small id="empidvalid" class="form-text text-muted invalid-feedback">
+      Enter a valid employee id
+    </small>
+    </div>
+    
+    <div style="width: 100%;">
+    <input type="submit" name="searchemp" value="Search Employee" id="searchemp-btn">
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+
+<!-- <script src="./js/myFunctions.js"></script> -->
+
+</body>
+</html>

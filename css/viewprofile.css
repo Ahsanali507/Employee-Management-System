@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+  /* viewprofile page css styling*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+  float: left;
+}
+
+li input{
+  display: block;
+  color: white;
+  background: none;
+  text-align: center;
+  padding: 12px;
+  margin-left: 8px;
+  text-decoration: none;
+  border: none;
+}
+li input:hover:not(.active){
+  background-color:  #04AA6D;
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User Or Admin</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="signUp.html">Sign up</a></li>
+  <li><a href="login.html">Login</a></li>
+</ul>
+<div class="container">
+<h2>User Or Admin Login Here</h2>
+
+<div class="outer">
+  <form action="login" method="post">
+    <div class="inner" style="width: 100%;">
+      <label>Email</label>
+      <input type="email" id="lemail" class="form-control" name="lemail" placeholder="Enter email" required >
+      <small id="lemailvalid" class="form-text text-muted invalid-feedback">
+        Your email must be a valid email
+      </small>
+    </div>
+  
+    <div class="inner" style="width: 100%;">
+      <label>Password</label>
+      <input type="password" id="lpassword" class="form-control" name="lpassword" placeholder="Enter password" required>
+      <small id="lpasswordvalid" class="form-text text-muted invalid-feedback">
+        Password must be 8-15 characters include at least one lowercase letter, one uppercase letter, one <br> numeric digit, and one special character
+      </small>
+    </div>
+    
+    <div style="width: 100%;">
+      <input type="submit" name="login" value="Login" id="lsubmit-btn">
+    </div>
+  </form>
+  <a href="signUp.html" class="account">Don't have account <b class="bold">signup here</b></a>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+
+<script src="./js/lfunctions.js"></script>
+
+</body>
+</html>
